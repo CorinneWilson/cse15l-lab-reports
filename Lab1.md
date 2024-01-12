@@ -14,11 +14,17 @@
 
   ![Image](cd_Directory.png)
   - The working directory was `/home` when this command was run.
-  - As shown above, this command produces no ouput, but does change the current working directory. Using the directory `lecture1/` as an argument for the  `cd` command changes the working directory from `/home` to `/home/lecture1`.
+  - As shown above, this command produces no ouput, but does change the prompt and the working directory. Using the directory `lecture1/` as an argument for the  `cd` command changes the working directory from `/home` to `/home/lecture1`. In addition, the prompt changed to
   - No error occurred.
 
 - A path to a *file* as an argument
+  
+  ![Image](cd_File.png)
+  - The working directory was `/home/lecture1` when this command was run.
+  - As shown above, 
+  - This output is an error 
 
+  
 ---
 ## Using `ls` Command
 
