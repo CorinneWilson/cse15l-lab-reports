@@ -22,7 +22,7 @@
   ![Image](cd_File.png)
   - The working directory was `/home/lecture1` when this command was run.
   - As shown above, this command produces `bash: cd: messages/en-us.txt: Not a directory` as an output. `en-us.txt` is a file within the `messages` folder which itself is within the `lecture1` folder. So, this output is tells us that `messages/en-us.txt` is not a path to a directory, but rather a path to a file. Thus, using it as an argument for the `cd` command will not work.
-  - This output is an error 
+  - This output is an error. You must follow a `cd` command with an argument that is a path to a directory. However, `en-us.txt` is not a directory, it is a file. Therefore, this command produces the error shown above. 
 
   
 ---
