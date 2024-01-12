@@ -4,7 +4,9 @@
 ## Using `cd` Command
 
 - No arguments
+
 ![Image](cd_None.png)
+
   - The working directory was `/home/lecture1` when the command was run.
   - As shown above, this command produces no output. This is because to properly use the `cd` command, you must follow it with a directory as an argument  
 
