@@ -32,12 +32,16 @@
   
   ![Image](ls_None.png)
   - The working directory was `/home/lecture1` when this command was run.
-  - As shown above, this command produces the output `Hello.class  Hello.java  messages  README`
+  - As shown above, this command produces the output `Hello.class  Hello.java  **messages**  README`. Using the `ls` command with no arguments lists out all the folders and files in the working directory. Since our current working directory is `/home/lecture1`, everything within the `lecture1` folder is listed including `Hello.class`, `Hello.java`, `README`, and `messages` (which is bolded because its a subdirectory).
+  - No error occurred.
   
 - A path to a *directory* as an argument
+  ![Image](ls_Directory.png)
+  -
   
 - A path to a *file* as an argument
-
+  ![Image](ls_File.png)
+repeats the path
 ---
 ## Using `cat` Command
 
