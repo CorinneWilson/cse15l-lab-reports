@@ -67,7 +67,7 @@
   
   ![Image](cat_Directory.png)
   - The working directory was `/home/lecture1` when this command was run.
-  - As shown above, the command produces the output `Hello World!`. This is because the path to the `en-us.txt` file was used as an argument for the `cat` command, thus the contents of the `en-us.txt` (which is the text "Hello World!") file will be printed as the output.
+  - As shown above, the command produces the output `Hello World!`. This is because the path to the `en-us.txt` file was used as an argument for the `cat` command, thus the contents of the `en-us.txt` (which is the text `Hello World!`) file will be printed as the output.
   - No error occurred.
 
   
