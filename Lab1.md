@@ -14,7 +14,7 @@
 
   ![Image](cd_Directory.png)
   - The working directory was `/home` when this command was run.
-  - As shown above, this command produces no ouput, but does change the prompt and the working directory. Using the directory to the `lecture1` folder as an argument for the `cd` command changes the working directory from `/home` to `/home/lecture1`. In addition, the prompt changed to `[user@sahara ~/lecture1]$` to remind us of the terminals new directory.
+  - As shown above, this command produces no ouput, but does change the prompt and the working directory. Using the path to the `lecture1` folder as an argument for the `cd` command changes the working directory from `/home` to `/home/lecture1`. In addition, the prompt changed to `[user@sahara ~/lecture1]$` to remind us of the terminals new directory.
   - No error occurred.
 
 - A path to a *file* as an argument
@@ -23,8 +23,6 @@
   - The working directory was `/home/lecture1` when this command was run.
   - As shown above, this command produces the output `bash: cd: messages/en-us.txt: Not a directory`. `en-us.txt` is a file within the `messages` folder which itself is within the `lecture1` folder. So, this output is tells us that `messages/en-us.txt` is not a path to a directory, but rather a path to a file. Thus, using it as an argument for the `cd` command will not work.
   - This output is an error. You must follow a `cd` command with an argument that is a path to a directory. However, `en-us.txt` is a file, not a directory. Therefore, this command produces the error shown above. 
-
-  
 ---
 ## Using `ls` Command
 
@@ -36,12 +34,17 @@
   - No error occurred.
   
 - A path to a *directory* as an argument
+  
   ![Image](ls_Directory.png)
-  -
+  - The working directory was `/home/lecture1` when this command was run.
+  - As shown above, this command produces the output `en-us.txt  es-mx.txt  fr.txt  zh-cn.txt`. Using the path to the `messages` folder as an argument for the `ls` command lists out all the files within the folder, which includes `en-us.txt`, `es-us.txt`, `fr.txt`, `zh-cn/txt` which is why they are all visible in the output.
+  - No error occurred.
   
 - A path to a *file* as an argument
   ![Image](ls_File.png)
-repeats the path
+  - The working directory was `/home/lecture1` when this command was run.
+  - As shown above, this command produces the output `messages/en-us.txt`. Using a path to a file (in this case the `en-us.txt` file) as an argument for the `ls` command causes the output to just repeat the path used (in this case `messages/en-us.txt`).
+  - No error occurred.
 ---
 ## Using `cat` Command
 
