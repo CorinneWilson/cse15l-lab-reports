@@ -7,7 +7,7 @@
  
   ![Image](cd_None.png)
   - The working directory was `/home/lecture1` when this command was run.
-  - As shown above, this command produces no output. This is because to properly use the `cd` command, you must follow it with a directory as an argument. Having no argument means there is no directory to change to, thus no output is produced.
+  - As shown above, this command produces no output. This is because to get an output using the `cd` command you must follow it with a directory as an argument. Having no argument means there is no directory to change to, thus no output is produced.
   - No error occurred.
 
 - A path to a *directory* as an argument
@@ -41,6 +41,7 @@
   - No error occurred.
   
 - A path to a *file* as an argument
+  
   ![Image](ls_File.png)
   - The working directory was `/home/lecture1` when this command was run.
   - As shown above, this command produces the output `messages/en-us.txt`. Using a path to a file (in this case the `en-us.txt` file) as an argument for the `ls` command causes the output to just repeat the path used (in this case `messages/en-us.txt`).
@@ -48,8 +49,17 @@
 ---
 ## Using `cat` Command
 
-no arguments
+- No arguments
+  
+  ![Image](cat_None.png)
+  - The working directory was `/home/lecture1` when this command was run.
+  - As shown above, this command produces no output. This is because `cat` is used to print the contents of a file. However no argument (or path to a file) is used, thus there is nothing to print. In addition, the `cat` command is now taking input rather than the terminal.
+  - No error occurred.
+   
+- A path to a *directory* as an argument
 
-a path to a *directory* as an argument
+  ![Image](cat_Directory.png)
+  - The working directory was `/home/lecture1` when this command was run.
+  - As shown above, this command produces the output `cat: messages/: Is a directory`. This is because `cat` is used to print the contents of a file. However, the path given as an argument is a path to a directory. Thus, the output tells us that the path we used is a directory and there is noth 
 
-a path to a *file* as an argument
+- A path to a *file* as an argument
