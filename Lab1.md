@@ -60,6 +60,14 @@
 
   ![Image](cat_Directory.png)
   - The working directory was `/home/lecture1` when this command was run.
-  - As shown above, this command produces the output `cat: messages/: Is a directory`. This is because `cat` is used to print the contents of a file. However, the path given as an argument is a path to a directory. Thus, the output tells us that the path we used is a directory and there is noth 
+  - As shown above, this command produces the output `cat: messages/: Is a directory`. This is because `cat` is used to print the contents of a file. However, the path given as an argument is a path to a directory. Thus, the output tells us that the path we used is a directory and not a file, so it can't print any contents.
+  - This ouput is an error. The `cat` command needs a path to a file as an argument so that it can print out that files contents. Since we use a path to a directory instead, it causes an error.
 
 - A path to a *file* as an argument
+  
+  ![Image](cat_Directory.png)
+  - The working directory was `/home/lecture1` when this command was run.
+  - As shown above, the command produces the output `Hello World!`. This is because the path to the `en-us.txt` file was used as an argument for the `cat` command, thus the contents of the `en-us.txt` (which is the text "Hello World!") file will be printed as the output.
+  - No error occurred.
+
+  
