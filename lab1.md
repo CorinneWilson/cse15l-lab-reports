@@ -22,7 +22,8 @@
   ![Image](cd_File.png)
   - The working directory was `/home/lecture1` when this command was run.
   - As shown above, this command produces the output `bash: cd: messages/en-us.txt: Not a directory`. `en-us.txt` is a file within the `messages` folder which itself is within the `lecture1` folder. So, this output is tells us that `messages/en-us.txt` is not a path to a directory, but rather a path to a file. Thus, using it as an argument for the `cd` command will not work.
-  - This output is an error. You must follow a `cd` command with an argument that is a path to a directory. However, `en-us.txt` is a file, not a directory. Therefore, this command produces the error shown above. 
+  - This output is an error. You must follow a `cd` command with an argument that is a path to a directory. However, `en-us.txt` is a file, not a directory. Therefore, this command produces the error shown above.
+
 ---
 ## Using `ls` Command
 
@@ -46,6 +47,7 @@
   - The working directory was `/home/lecture1` when this command was run.
   - As shown above, this command produces the output `messages/en-us.txt`. Using a path to a file (in this case the `en-us.txt` file) as an argument for the `ls` command causes the output to just repeat the path used (in this case `messages/en-us.txt`).
   - No error occurred.
+    
 ---
 ## Using `cat` Command
 
