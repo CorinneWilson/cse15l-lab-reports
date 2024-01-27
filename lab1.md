@@ -7,7 +7,7 @@
  
   ![Image](cd_None.png)
   - The working directory was `/home/lecture1` when this command was run.
-  - As shown above, this command produces no output. This is because to get an output using the `cd` command you must follow it with a directory as an argument. Having no argument means there is no directory to change to, thus no output is produced.
+  - As shown above, this command produces no output but does change the directory to `/home`. This is because `cd` is used to change the current working directory to the path given as an argument. When `cd` is run while having no argument, we are returned to the home directory `/home`.
   - No error occurred.
 
 - A path to a *directory* as an argument
