@@ -2,8 +2,45 @@
 ---
 ## Part 1
 - `ChatServer` code
+```
+import java.io.IOException;
+import java.net.URI;
+import java.util.ArrayList;
 
-  ![Image](ChatServer_code.png)
+class Handler implements URLHandler {
+    String str = "";
+    public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            return str;
+        }
+        if (url.getPath().contains("/add-message")) {
+            String[] parameters = url.getQuery().split("&");
+
+            String[] s_Message = parameters[0].split("=");
+            String message = s_Message[1];
+
+            String[] user_Name = parameters[1].split("=");
+            String name = user_Name[1];
+                
+            String newLine = name + ": " + message;   
+            str = str + "\n" + newLine;
+            return str; 
+        }
+        return "404 Not Found!";
+    }
+}
+
+class ChatServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+        int port = Integer.parseInt(args[0]);
+        Server.start(port, new Handler());
+    }
+}
+```
 ---
 
 **Message 1**
