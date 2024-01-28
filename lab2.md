@@ -110,9 +110,10 @@
   - As you can see the absolute path to my private key is `/c/Users/coriw/.ssh/id_ed25519`.
 ---
 
- - Loggging In Without a Password
+ - Logging In Without a Password
+
+   ![Image](Login_wo_Password.png)
    
-  ![Image](Login_wo_Password.png)
 ---
 
 ## Part 3
