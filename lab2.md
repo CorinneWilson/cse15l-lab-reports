@@ -88,6 +88,7 @@ class ChatServer {
     - So `str` changes to `"jpolitz: Hello"`.   
   - `return str`
     - The string is returned to be displayed on the page.
+
 ---
 
 **Message 2**
@@ -134,6 +135,7 @@ class ChatServer {
       ```
   - `return str`
     - The string is returned to be displayed on the page.
+
 ---
 
 ## Part 2
