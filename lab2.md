@@ -106,7 +106,7 @@
 
 - Absolute Path to Private Key
   
-  ![Image](PrivateKeyLs.png)
+  ![Image](PrivateKeyPathLs.png)
   - As you can see the absolute path to my private key is `/c/Users/coriw/.ssh/id_ed25519`.
 ---
 
