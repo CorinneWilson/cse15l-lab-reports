@@ -118,4 +118,4 @@
 
 ## Part 3
 - Something New I Learned
-  - In our Week 2 Lab my favorite thing I learned about was writing programs that take in a webservers URL as input, and change the text on the page based on the urls path and query. Taking the path, something like "/add", and a query, something like "s=apple" you can use methods such getPath(), getQuery(), and split(). These methods can be used to add the word "apple" to an ongoing list that is displayed on the page. So after using an ending to the url like `/add?s=apple` the text on the page could change from "List: " into "List: apple".
+  - In our Week 2 Lab my favorite thing I learned about was writing programs that take in a webservers URL as input, and change the text on the page based on the urls path and query. Taking the path, something like `/add`, and a query, something like `s=apple` you can use methods such `getPath()`, `getQuery()`, and `split()`. These methods can be used to add the word "apple" to an ongoing list that is displayed on the page. So after using an ending to the url like `/add?s=apple` the text on the page could change from "List: " into "List: apple".
