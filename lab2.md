@@ -2,6 +2,7 @@
 ---
 ## Part 1
 - `ChatServer` code
+
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -41,6 +42,7 @@ class ChatServer {
     }
 }
 ```
+
 ---
 
 **Message 1**
