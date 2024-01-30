@@ -44,7 +44,6 @@ class ChatServer {
 ```
 
 ---
-
 **Message 1**
   ![Image](ChatServer_message1.png)
 
@@ -90,7 +89,6 @@ class ChatServer {
     - The string is returned to be displayed on the page.
 
 ---
-
 **Message 2**
   ![Image](ChatServer_message2.png)
   - `handleRequest(URI url)`
@@ -137,7 +135,6 @@ class ChatServer {
     - The string is returned to be displayed on the page.
 
 ---
-
 ## Part 2
 - Absolute Path to Public Key
   
@@ -146,7 +143,6 @@ class ChatServer {
   - As you can see the absolute path to my public key is `/home/linux/ieng6/oce/2b/cowilson/.ssh/authorized_keys`.
     
 ---
-
 - Absolute Path to Private Key
   
   ![Image](PrivateKeyPathLs.png)
@@ -154,13 +150,11 @@ class ChatServer {
   - As you can see the absolute path to my private key is `/c/Users/coriw/.ssh/id_ed25519`.
     
 ---
-
  - Logging In Without a Password
 
    ![Image](Login_wo_Password.png)
    
 ---
-
 ## Part 3
 - Something New I Learned
   - In our Week 2 Lab my favorite thing I learned about was writing programs that take in a webservers URL as input, and change the text on the page based on the urls path and query. Taking the path, something like `/add`, and a query, something like `s=apple` you can use methods such `getPath()`, `getQuery()`, and `split()`. These methods can be used to add the word "apple" to an ongoing list that is displayed on the page. So after using an ending to the url like `/add?s=apple` the text on the page could change from "List: " into "List: apple".
