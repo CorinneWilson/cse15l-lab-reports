@@ -142,13 +142,17 @@ class ChatServer {
 - Absolute Path to Public Key
   
   ![Image](PublicKeyLs.png)
+  
   - As you can see the absolute path to my public key is `/home/linux/ieng6/oce/2b/cowilson/.ssh/authorized_keys`.
+    
 ---
 
 - Absolute Path to Private Key
   
   ![Image](PrivateKeyPathLs.png)
+  
   - As you can see the absolute path to my private key is `/c/Users/coriw/.ssh/id_ed25519`.
+    
 ---
 
  - Logging In Without a Password
