@@ -48,7 +48,7 @@ class ChatServer {
   ![Image](ChatServer_message1.png)
 
   - `String str = ""`
-    - The field str is set to the empty string. 
+    - The field `str` is set to the empty string. 
   - `handleRequest(URI url)`
     - `https://0-0-0-0-8000-j4qve8avgq9k57r2kujk8e96po.us.edusercontent.com/add-message?s=Hello&user=jpolitz` is passed in as an argument for the url.
   - `url.getPath().equals("/")`
