@@ -77,3 +77,177 @@ Corrected Output
 ---
 
 ## Part 2: Researching Commands
+
+`find -name`
+
+This command can be useful when you don't remember where you saved a file, but do remember the exact name of the file you want to locate.
+
+- We can use `-name` to find a file or directory within `./technical` with the String `preface.txt` in its name.
+```
+$ find . -name "*preface.txt"
+./911report/preface.txt
+```
+
+ - We can use `-name` to find files or directories within `./technical` with the Strings `chapter-` followed sometime after by `.txt` (case-sensitive) in their names.
+```
+$ find . -name "*chapter-*.txt"
+./911report/chapter-1.txt
+./911report/chapter-10.txt
+./911report/chapter-11.txt
+./911report/chapter-12.txt
+./911report/chapter-13.1.txt
+./911report/chapter-13.2.txt
+./911report/chapter-13.3.txt
+./911report/chapter-13.4.txt
+./911report/chapter-13.5.txt
+./911report/chapter-2.txt
+./911report/chapter-3.txt
+./911report/chapter-5.txt
+./911report/chapter-6.txt
+./911report/chapter-7.txt
+./911report/chapter-8.txt
+./911report/chapter-9.txt
+```
+
+Source: [https://www.redhat.com/sysadmin/linux-find-command](https://www.redhat.com/sysadmin/linux-find-command)
+
+---
+
+`find -iname`
+
+This command can be useful when you don't remember where you saved a file, and don't remember the exact capitalization of the name of the file, but still remember it close enough to locate it. Or you can locate several files with a specific name in them, but one might be capitalized and the other might not.
+
+- We can use `-iname` to find all files or directories within `./technical` with the String `report` (case-insensitive) in its name.
+```
+$ find . -iname "*report*"
+./911report
+./government/About_LSC/commission_report.txt
+./government/About_LSC/Progress_report.txt
+./government/About_LSC/reporting_system.txt
+./government/About_LSC/Special_report_to_congress.txt
+./government/About_LSC/State_Planning_Report.txt
+./government/About_LSC/State_Planning_Special_Report.txt
+./government/About_LSC/Strategic_report.txt
+./government/Post_Rate_Comm/ReportToCongress2002WEB.txt
+```
+
+- We can use `-iname` to find all files or directories within `./technical/government` with the String `legal` (case-insensitive) in its name.
+```
+$ find ./government -iname "*legal*"
+./government/About_LSC/LegalServCorp_v_VelazquezDissent.txt
+./government/About_LSC/LegalServCorp_v_VelazquezOpinion.txt
+./government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
+./government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt
+./government/Media/5_Legal_Groups.txt
+./government/Media/Boone_legal_service.txt
+./government/Media/Bridging_legal_aid_gap.txt
+./government/Media/Coup_Reshapes_Legal_Aid.txt
+./government/Media/Free_Legal_Assistance.txt
+./government/Media/Free_legal_service.txt
+./government/Media/Legal-aid_chief.txt
+./government/Media/Legal_Aid_attorney.txt
+./government/Media/Legal_Aid_campaign.txt
+./government/Media/Legal_Aid_in_Clay_County.txt
+./government/Media/Legal_Aid_looks_to_legislators.txt
+./government/Media/Legal_Aid_Society.txt
+./government/Media/Legal_hotline.txt
+./government/Media/Legal_services_for_poor.txt
+./government/Media/Legal_system_fails_poor.txt
+./government/Media/less_legal_aid.txt
+./government/Media/Marylands_Legal_Aid.txt
+./government/Media/NJ_Legal_Services.txt
+./government/Media/Paralegal_Honored.txt
+./government/Media/Poor_Lacking_Legal_Aid.txt
+./government/Media/Providing_Legal_Aid.txt
+./government/Media/Supporting_Legal_Center.txt
+./government/Media/Valley_Needing_Legal_Services.txt
+```
+
+Source: [https://www.redhat.com/sysadmin/linux-find-command](https://www.redhat.com/sysadmin/linux-find-command)
+
+---
+
+`find -type f`
+
+This command can be useful when trying to find all elements within a directory (and its subdirectories) that are a file type.
+
+- We can use `-type f` to find all files within `./technical`. This includes hundreds of files.
+```
+$ find . -type f 
+./911report/chapter-1.txt
+./911report/chapter-10.txt
+./911report/chapter-11.txt
+./911report/chapter-12.txt
+./911report/chapter-13.1.txt
+./911report/chapter-13.2.txt
+./911report/chapter-13.3.txt
+./911report/chapter-13.4.txt
+./911report/chapter-13.5.txt
+./911report/chapter-2.txt
+... More lines ...
+./plos/pmed.0020281.txt
+```
+
+- We can use `-type f` to find all files only within the `./technical/911report` directory.
+```
+$ find ./911report -type f
+./911report/chapter-1.txt
+./911report/chapter-10.txt
+./911report/chapter-11.txt
+./911report/chapter-12.txt
+./911report/chapter-13.1.txt
+./911report/chapter-13.2.txt
+./911report/chapter-13.3.txt
+./911report/chapter-13.4.txt
+./911report/chapter-13.5.txt
+./911report/chapter-2.txt
+./911report/chapter-3.txt
+./911report/chapter-5.txt
+./911report/chapter-6.txt
+./911report/chapter-7.txt
+./911report/chapter-8.txt
+./911report/chapter-9.txt
+./911report/preface.txt
+```
+
+Source: [https://www.redhat.com/sysadmin/linux-find-command](https://www.redhat.com/sysadmin/linux-find-command)
+
+---
+
+`find -type d`
+
+This command can be useful when trying to find all elements within a directory (and its subdirectories) that are a directory type.
+
+- We can use `-type d` to find all directories/subdirectories within `./technical`.
+```
+$ find . -type d
+.
+./911report
+./biomed
+./government
+./government/About_LSC
+./government/Alcohol_Problems
+./government/Env_Prot_Agen
+./government/Gen_Account_Office
+./government/Media
+./government/Post_Rate_Comm
+./plos
+```
+
+- We can use `-type d` to find all directories/subdirectories within the `./technical/government` directory.
+```
+$ find ./government -type d
+./government
+./government/About_LSC
+./government/Alcohol_Problems
+./government/Env_Prot_Agen
+./government/Gen_Account_Office
+./government/Media
+./government/Post_Rate_Comm
+```
+
+Source: [https://www.redhat.com/sysadmin/linux-find-command](https://www.redhat.com/sysadmin/linux-find-command)
+
+---
+
+
