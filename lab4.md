@@ -83,6 +83,6 @@ OK (2 tests)
 
 - `git commit -m` takes a snapshot of all the current states of the files in the staging area to save permanently to my Git directory, and create a timeline of the history of this repository/directory. After that `"update ListExamples.java"` is just the commit message to keep track of what happened/added to this commit.
 
-`git <space> push <space> origin <space> main`
+`git <space> push <space> origin <space> main <enter>`
 
 - This runs the command `git push origin main` which is used to upload the local repository we just updated back to the repository on my Github. `origin` means we push to the repository we got the orignal clone from and `main` is the main branch we push to.
