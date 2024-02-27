@@ -21,12 +21,14 @@
 `bash <space> t <tab> <enter>`
 
 - `bash` is used to run a shell script. Typing `t <tab>` autocompletes to `tesh.sh` which includes the following commands to compile all files and run the tests:
+
 ```
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 ```
 
 - Thus, we are running the full command `bash test.sh`, which executes this script above and outputs the following failed results:
+
 ```
 JUnit version 4.13.2
 ..E
@@ -62,6 +64,7 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 ```
 
 - Thus, we rerun the command `bash test.sh` now with a fixed implementation, which executes this script above and outputs the following correct results:
+
 ```
 JUnit version 4.13.2
 ..
