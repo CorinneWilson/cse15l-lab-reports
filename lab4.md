@@ -6,11 +6,15 @@
 
 - This runs the command `ssh cowilson@ieng6.ucsd.edu`. This allows me to remotely log into the ieng6 server.
 
+![Image](ssh.png)
+
 ## Step 5. Clone fork of repository from Github account (using SSH URL)
 
 `git <space> clone <space> <ctrl+v> <enter>`
 
-- In my clip board I had `git@github.com:CorinneWilson/lab7.git` copied. So, the keys `<crtl+v>` pasted it after `git clone`. Thus, I executed the command `git clone git@github.com:CorinneWilson/lab7.git` which clones my fork of the `lab7/` repository from my Github. 
+- In my clip board I had `git@github.com:CorinneWilson/lab7.git` copied. So, the keys `<crtl+v>` pasted it after `git clone`. Thus, I executed the command `git clone git@github.com:CorinneWilson/lab7.git` which clones my fork of the `lab7/` repository from my Github.
+
+![Image](git_clone.png)
 
 ## Step 6. Run the tests, demonstrating they fail
 
@@ -43,15 +47,25 @@ FAILURES!!!
 Tests run: 2,  Failures: 1
 ```
 
+![Image](test_fail.png)
+
 ## Step 7. Edit the code file to fix failing test
 
 `vim <space> L <tab> . <tab> <enter>`
 
 - `vim` is used to edit the particular file you give it as an argument. Typing `L <tab> . <tab>` autocompletes to `ListExamples.java`. Thus, we are running the full command `vim ListExamples.java` to now edit the `ListExamples.java` file.
 
+![Image](vim.png)
+
 `/index1 <enter> 9n e x i 2 <esc> :wq <enter>` 
 
 - In vim `/index1` is used to find instances of the text `index1` which is what we are looking for. Then, `9n` goes to the ninth instance of `index1` which is the text that we want to alter. Next, `e` moves the cursor to the end of the word your currently at, so it moves to the 1 at the end of `index1`, and `x` removes the character at the cursor so now the word is `index` . Then, `i` changes the editor into insert mode and typing `2` inserts 2 at the spot of the cursor so now the word is `index2` which is what we wanted. `<esc>` ensures the editor goes back into normal mode and from there we type `:wq <enter>` so save and quit from vim.
+
+- Before fix: you can see we want to change the 1 in `index1` to 2.
+![Image](before_fix.png)
+
+- After: `index1` is now `index2`
+![Image](after_fix.png)
 
 ## Step 8. Run the tests, demonstrating they now succeed
 `<up> <up> <enter>`
@@ -73,6 +87,8 @@ Time: 0.016
 OK (2 tests)
 ```
 
+![Image](test_success.png)
+
 ## Step 9. Commit and push the resulting change to your Github account
 
 `git <space> add L <tab> <enter>`
@@ -86,3 +102,5 @@ OK (2 tests)
 `git <space> push <space> origin <space> main <enter>`
 
 - This runs the command `git push origin main` which is used to upload the local repository we just updated back to the repository on my Github. `origin` means we push to the repository we got the orignal clone from and `main` is the main branch we push to.
+
+![Image](commit_push.png)
