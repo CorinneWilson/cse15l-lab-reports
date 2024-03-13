@@ -54,5 +54,5 @@
 
 ---
 
-Part 2 – Reflection
-In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn't know before. It could be a technical topic we addressed specifically, something cool you found out on your own building on labs, something you learned from a tutor or classmate, and so on. It doesn't have to be specifically related to a lab writeup, we just want to hear about cool things you learned!
+## Part 2: Reflection
+My favorite thing I learned from my labs in the second half of the quarter is how to use a debugger, specifically jdb. Compiling your files with the javac option `-g` will allows us to use a debugger on these file. Then using `jdb` to run the commands/tests you want, and other commands in jdb like `stop at/in`, `run`, `locals`, etc., helps us to look deeper into what is actually happening when the program runs, even at specific lines, and what local variables are present and their values at this point. This, along with other commands, can help me debug my future programs in a more efficient manner and also help me understand what is going on when they are run at a deeper level. This will very useful in my career and will help me become a faster and more knowledgable programmer.
